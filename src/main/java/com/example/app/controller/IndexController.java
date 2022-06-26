@@ -15,7 +15,6 @@ public class IndexController {
 
 	@RequestMapping("/")
 	public String index(Model model) {
-		model.addAttribute("val", userService.getUser("00000"));
 		return "index";
 	}
 }

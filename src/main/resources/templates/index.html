@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="UTF-8">
 	<title>Spring Boot Sample</title>
+	<div th:replace="/util :: read"></div>
 </head>
 
 <body>
-	<p>Gradle Spring Boot Hello World</p>
-	<form th:action="@{/}" th:object="${val}">
-		<input readonly type="text" th:field="*{userName}">
-	</form>
-</body>
+	<div th:replace="/util :: header"></div>
+	<div class=”container”>
+		<h2>Gradle Spring Boot Hello World</h2>
+		<a th:href="@{/user/fetch}" class="btn btn-primary">ユーザー取得</a>
+	</div>
 
+	<div th:replace="/util :: footer"></div>
+</body>
 </html>

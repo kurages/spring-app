@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title></title>
+
+	<th:block th:fragment="read">
+		<meta charset="UTF-8">
+
+		<link th:href="@{/bootstrap/css/bootstrap-reboot.min.css}" rel="stylesheet">
+		<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+	</th:block>
+</head>
+
+<body>
+	<th:block th:fragment="header">
+		<div class=”container” style="display:block; background-color: rgb(196, 196, 196);">
+			<div class="row">
+				<h1 class="col-md-2">Title</h1>
+				<a class="col-md-10 btn btn-default">ボタン</a>
+			</div>
+		</div>
+	</th:block>
+
+	<th:block th:fragment="footer">
+		<footer class="footer fixed-bottom" style="background-color:rgb(196, 196, 196); 
+			margin-top: auto;
+			text-align: center;
+		">
+			<div class="container">
+				<p class="text-muted" >
+					Copyright(c) 2022 <a href="https://github.com/kurages">@kurages</a>. All Rights Reserved.
+				</p>
+			</div>
+		</footer>
+		<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+	</th:block>
+</body>
+</html>

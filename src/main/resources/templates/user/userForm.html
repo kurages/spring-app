@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Spring Boot Sample</title>
+	<div th:replace="/util :: read"></div>
+</head>
+
+<body>
+<div th:replace="/util :: header"></div>
+<div class=”container”><div class="row">
+	<div class="col-mod-6"></div>
+	<div class="col-mod-6">
+		<form th:action="@{userView}" th:object="${form}">
+			<div class="row">
+				<div class="col-md-3"><label>ユーザーid: </label></div>
+				<div class="col-md-5"><input class="form-control" type="text" th:field="*{userId}"></div>
+			</div>
+			<input class="btn btn-primary" type="submit">
+		</form>
+	</div>
+</div></div>
+
+<div th:replace="/util :: footer"></div>
+</body>
+
+</html>
