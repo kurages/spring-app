@@ -13,6 +13,10 @@ configurations {
 	}
 }
 
+springBoot {
+	mainClass = 'com.example.app.Application'
+}
+
 repositories {
 	maven { url 'https://repo.spring.io/milestone' }
 	maven { url 'https://repo.spring.io/snapshot' }
@@ -33,3 +37,5 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+

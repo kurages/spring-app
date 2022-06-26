@@ -21,7 +21,6 @@ public class UserService{
 	UserRepository userRepository;
 
 	public UserDto getUser(String userId){
-		//return userRepository.getUser(userId);
 		List<UserDto> dtoList = userRepository.getUser(userId);
 		if(dtoList.isEmpty()){
 			return null;
