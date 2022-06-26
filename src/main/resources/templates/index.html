@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Spring Boot Sample</title>
+</head>
+
+<body>
+	<p>Gradle Spring Boot Hello World</p>
+	<form th:action="@{/}" th:object="${val}">
+		<input readonly type="text" th:field="*{userName}">
+	</form>
+</body>
+
+</html>
